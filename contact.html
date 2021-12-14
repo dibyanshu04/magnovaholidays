@@ -112,28 +112,28 @@
             </div>
             <div class="row block-9">
                 <div class="col-md-6 pr-md-5">
-                    <form method="POST">
+                    <form name="Magnova_contact_form" method="POST" data-netlify="true">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Name" id="name">
+                            <input type="text" class="form-control" placeholder="Your Name" name="name">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Email" id="email">
+                            <input type="text" class="form-control" placeholder="Your Email" name="email">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Phone" id="phone">
+                            <input type="text" class="form-control" placeholder="Your Phone" name="phone">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Subject" id="subject">
+                            <input type="text" class="form-control" placeholder="Subject" name="subject">
                         </div>
                         <div class="form-group">
-                            <textarea name="" id="message" cols="30" rows="7" class="form-control"
+                            <textarea name="message" id="" cols="30" rows="7" class="form-control"
                                 placeholder="Message"></textarea>
                         </div>
-                        <div class="text-success" id="success-message"></div>
                         <div class="form-group">
-                            <input type="button" value="Send Message" class="btn btn-primary py-3 px-5"
-                                onclick="sendContactForm();">
-
+                            <div data-netlify-recaptcha="true"></div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary py-3 px-5">Submit</button>
                         </div>
                     </form>
 
